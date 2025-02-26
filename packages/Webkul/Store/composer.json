@@ -1,0 +1,29 @@
+{
+    "name": "bagisto/laravel-shop",
+    "license": "MIT",
+    "description" : "Shop package for store front and customers",
+    "authors": [
+        {
+            "name": "Bagisto",
+            "email": "support@bagisto.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Webkul\\Shop\\": "src/",
+            "Webkul\\CustomCSS\\": "src/"
+
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Webkul\\Shop\\Providers\\ShopServiceProvider",
+                "Webkul\\CustomCSS\\Providers\\CustomCSSServiceProvider"
+            ],
+            "aliases": {}
+        }
+    },
+    "minimum-stability": "dev"
+}
