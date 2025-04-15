@@ -14,5 +14,7 @@ class VerifyCsrfToken extends Middleware
     protected $except = [
         '/stripe-success',
         '/stripe-cancel',
+        'customer/login', // for load testing only
+
     ];
 }

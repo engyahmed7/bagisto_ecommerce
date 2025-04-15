@@ -21,7 +21,7 @@
                 />
             @else
                 <img
-                    src="{{ request()->cookie('dark_mode') ? bagisto_asset('images/dark_logo_theme.png') : bagisto_asset('images/dark_logo.png') }}"
+                    src="{{ request()->cookie('dark_mode') ? bagisto_asset('images/dark_logo_theme.png') : bagisto_asset('images/logo.svg') }}"
                     id="logo-image"
                     width="60"
                     height="10"
@@ -155,7 +155,7 @@
                 />
             @else
                 <img
-                    src="{{ request()->cookie('dark_mode') ? bagisto_asset('images/dark-logo.svg') : bagisto_asset('images/logo.jpg') }}"
+                    src="{{ request()->cookie('dark_mode') ? bagisto_asset('images/dark-logo.svg') : bagisto_asset('images/logo.svg') }}"
                     id="logo-image"
                     alt="{{ config('app.name') }}"
                 />
@@ -740,9 +740,9 @@
                 return {
                     isDarkMode: {{ request()->cookie('dark_mode') ?? 0 }},
 
-                    logo: "{{ bagisto_asset('images/logo.jpg') }}",
+                    logo: "{{ bagisto_asset('images/logo.svg') }}",
 
-                    dark_logo: "{{ bagisto_asset('images/dark-logo2.png') }}",
+                    dark_logo: "{{ bagisto_asset('images/logo.svg') }}",
                 };
             },
 
